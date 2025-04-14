@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <div class="title">
+        <h1>Let's Weather</h1>
+      </div>
+      <div class="name">
+        <h2>Weather in <span id="cityName"></span></h2>
+        <img id="icon" src="" alt="" />
+      </div>
+      <div class="box">
+        <div class="box-1">
+          <div class="sun">
+            <i class="fa-solid fa-sun fa-spin fa-spin-reverse fa-4x"></i>
+          </div>
+          <div class="temp">
+            <i class="fa-solid fa-temperature-high fa-fade fa-3x"></i>
+            <p>Temperature is <span id="temp"></span>&#8451;</p>
+          </div>
+          <br />
+          <div class="feels">
+            <i class="fa-solid fa-child-reaching fa-fade fa-3x"></i>
+            <p>Feels like <span id="feels_like"></span>&#8451;</p>
+          </div>
+          <br />
+          <div class="temp-min">
+            <i class="fa-solid fa-person-rays fa-fade fa-3x"></i>
+            <p>Ultraviolet ray <span id="uv"></span>mW/cm²</p>
+          </div>
+          <br />
+          <div class="temp-max">
+            <i class="fa-solid fa-fire fa-fade fa-3x"></i>
+            <p>Heat index is <span id="heatindex_c"></span>&#8451;</p>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="wind-logo">
+            <i class="fa-solid fa-wind fa-flip fa-4x"></i>
+          </div>
+          <div class="pressure">
+            <i class="fa-solid fa-parachute-box fa-fade fa-3x"></i>
+            <p>Pressure is <span id="pressure"></span> mb</p>
+          </div>
+          <br />
+          <div class="wind">
+            <i class="fa-solid fa-fan fa-spin-pulse fa-3x"></i>
+            <p>Wind is <span id="speed"></span> mph</p>
+          </div>
+          <br />
+          <div class="wind-degree">
+            <i class="fa-solid fa-paper-plane fa-fade fa-3x"></i>
+            <p>Wind degree <span id="wind_degree"></span> &deg;</p>
+          </div>
+          <br />
+          <div class="wind-dir">
+            <i class="fa-solid fa-plane-departure fa-fade fa-3x"></i>
+            <p>Wind direction is <span id="wind_dir"></span></p>
+          </div>
+        </div>
+        <div class="box-3">
+          <div class="water">
+            <i class="fa-solid fa-water fa-flip fa-4x"></i>
+          </div>
+          <br />
+          <div class="humidity">
+            <i class="fa-solid fa-smog fa-fade fa-3x"></i>
+            <p>Humidity is <span id="humidity"></span>&#37;</p>
+          </div>
+          <br />
+          <div class="sea-level">
+            <i class="fa-solid fa-cloud fa-fade fa-3x"></i>
+            <p>cloud <span id="cloud"></span></p>
+          </div>
+          <br />
+          <div class="ground-level">
+            <i class="fa-solid fa-eye fa-fade fa-3x"></i>
+            <p>Visibility till <span id="vis_km"></span> Km</p>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <div class="search-input">
+          <input id="city" type="search" placeholder="Enter location" />
+        </div>
+        <div class="search-logo">
+          <button type="submit" class="search-button" id="submit">
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
